@@ -42,21 +42,24 @@ function closeBtnfun() {
 
 closeBtn.addEventListener("click", closeBtnfun);
 
-
 // loading page
 const load = document.getElementById("loading");
 window.addEventListener("load", () => {
-
   setTimeout(() => {
     load.style.height = 0;
   }, 1000);
-
   setTimeout(() => {
     load.style.display = "none";
   }, 2000);
-
-
 })
 
+
+// dark mode theme
+
+const btn = document.getElementById("darkmode-toggle");
+
+btn.addEventListener("change", () => {
+  document.body.classList.toggle("dark__theme");
+})
 
 
