@@ -58,8 +58,9 @@ window.addEventListener("load", () => {
 
 const btn = document.getElementById("darkmode-toggle");
 
-btn.addEventListener("change", () => {
+btn.addEventListener("click", () => {
   document.body.classList.toggle("dark__theme");
 })
 
+btn.click();
 
